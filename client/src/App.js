@@ -5,7 +5,12 @@ const statusString = (statusValue) => {
     case -1: return "too low"
     case 0: return "all good"
     case 1: return "too high"
+    default: return "unknown"
   }
+}
+
+const statusColor = (statusValue) => {
+  return statusValue != 0 ? "red" : null
 }
 
 const POLLING_INTERVAL = 5000
@@ -45,7 +50,7 @@ function App() {
               <td width={150}>{items[itemKey].name}</td>
               <td width={150}>{items[itemKey].temperature}</td>
               <td width={150}>
-                <span>{statusString(items[itemKey].status)}</span>
+                <span style={{ color: statusColor(items[itemKey].status) }}>{statusString(items[itemKey].status)}</span>
               </td>
             </tr>
           ))}
