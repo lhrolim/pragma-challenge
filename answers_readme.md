@@ -31,11 +31,19 @@ This would reduce the load on the server while keeping the client application mo
 
 
 
-PS: Due to being a bit rusty on coding, it took me a considerable amount of time just to adjust the nodeJS to use Ecma syntax, which I deem to be way superior, 
-until I found https://timonweb.com/javascript/how-to-enable-ecmascript-6-imports-in-nodejs/ 
+Notes:
+
+1. Due to being a bit rusty on coding, it took me a considerable amount of time just to adjust the nodeJS to use Ecma syntax, which I deem to be way superior, 
+until I found https://timonweb.com/javascript/how-to-enable-ecmascript-6-imports-in-nodejs/
+2. Also, didn't have a few productivity tweaks set (nodemon, shortcut keys) which also hindered performance.
+3. Stopped for an hour to have lunch, total time spent 4h
 
 
 ## Improvements Highlights
+
+* Iplemented all of the aforementioned architectural revamps (points of improvements)
+* Implemented tests on the server side to validate the temparatures match the requirement data
+* Also implemented tests to account for sensorData API not returning data
 
 ## Assumptions and Questions
 
