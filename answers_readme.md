@@ -24,17 +24,17 @@ This would reduce the load on the server while keeping the client application mo
 * There's no error handling to capture issues should the sever or the sensor API go down. 
 * There could be i18n requirements down the road, hence it's a good idea to isolate the status values from the actual strings displayed
 
-3. Implement changes
+3. Implement changes (3h)
 
 * After a reading of the situation was made it was time to implement the changes.
 * First I started by moving the status logic to the server side, while also modifying the orchestration of the SensorAPI
-
+* After the api was implemented and tested I updated the client side (20m)
 
 
 Notes:
 
 1. Due to being a bit rusty on coding, it took me a considerable amount of time just to adjust the nodeJS to use Ecma syntax, which I deem to be way superior, 
-until I found https://timonweb.com/javascript/how-to-enable-ecmascript-6-imports-in-nodejs/
+until I found https://timonweb.com/javascript/how-to-enable-ecmascript-6-imports-in-nodejs/ (~ 40m)
 2. Also, didn't have a few productivity tweaks set (nodemon, shortcut keys) which also hindered performance.
 3. Stopped for an hour to have lunch, total time spent 4h
 
