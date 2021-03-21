@@ -27,6 +27,12 @@ This would reduce the load on the server while keeping the client application mo
 3. Implement changes
 
 * After a reading of the situation was made it was time to implement the changes.
+* First I started by moving the status logic to the server side, while also modifying the orchestration of the SensorAPI
+
+
+
+PS: Due to being a bit rusty on coding, it took me a considerable amount of time just to adjust the nodeJS to use Ecma syntax, which I deem to be way superior, 
+until I found https://timonweb.com/javascript/how-to-enable-ecmascript-6-imports-in-nodejs/ 
 
 
 ## Improvements Highlights
@@ -47,3 +53,4 @@ I personally tested the herouku API with different range of values and strings
 * Still on UI think of pagination and filters as ways to scale up the clients to show up more beers.
 * Think of implementing a CircuitBreaker approach to the downstream SensorAPI so that whenever it's down we can return the last cached version and help it to gracefully restore
 * Depending on how the requirements evolve (ex: I18N) the logic on where to generate the status and even the names of the beer could be changed from client to server.
+* Is it possible to ask for the SensorAPI to include another endpoint for accepting an array of beerIds ? this would reduce the amount of requests and traffic while also allowing for potential better distribution of the load
